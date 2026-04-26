@@ -22,11 +22,10 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                bat '''
-                echo Starting Flask App...
-                taskkill /F /IM python.exe || exit 0
-                start /B "flask-app" "C:\\Users\\bjvar\\AppData\\Local\\Programs\\Python\\Python314\\python.exe" app.py
-                '''
+        bat '''
+        echo Starting Flask App...
+        "C:\\Users\\bjvar\\AppData\\Local\\Programs\\Python\\Python314\\python.exe" app.py
+        '''
             }
         }
     }
