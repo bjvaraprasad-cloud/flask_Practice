@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        MONGO_URI = 'mongodb+srv://bjvaraprasad_db_user:test12345@cluster0.o81tstc.mongodb.net/test_student_db'
+        MONGO_URI = 'mongodb+srv://bjvaraprasad_db_user:VOBWm6B5rKyxf2eG@vara.axctbzu.mongodb.net/?appName=vara'
     }
 
     stages {
