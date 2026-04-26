@@ -9,19 +9,12 @@ import os
 load_dotenv()
 
 app = Flask(__name__)
-app.config["MONGO_URI"] = os.getenv("MONGO_URI", "mongodb://localhost:27017/testdb")
+app.config["MONGO_URI"] = os.getenv("MONGO_URI")
 app.secret_key = os.getenv("SECRET_KEY")
 
 # Use certifi CA bundle explicitly for cross-platform TLS reliability
 # (notably fixes common macOS certificate verification failures).
-import os
-
-mongo = None
-
-try:
-    mongo = PyMongo(app, tlsCAFile=certifi.where())
-except Exception as e:
-    print("MongoDB not connected, running without DB")
+mongo = PyMongo(app, tlsCAFile=certifi.where())
 
 # Home page -> list students
 @app.route('/')
@@ -66,7 +59,6 @@ def delete_student(student_id):
     mongo.db.students.delete_one({"_id": ObjectId(student_id)})
     return redirect(url_for('index'))
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
-
+if __name__ == '__main__':
+    app.run(host="0.0.0.0", debug=True, port=5000)
 
