@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'pip install -r requirements.txt'
+                bat '"C:\\Users\\bjvar\\AppData\\Local\\Programs\\Python\\Python314\\python.exe" -m pip install -r requirements.txt'
             }
         }
 
         stage('Test') {
             steps {
-                bat 'pytest'
+                bat '"C:\\Users\\bjvar\\AppData\\Local\\Programs\\Python\\Python314\\python.exe" -m pytest'
             }
         }
 
@@ -19,7 +19,7 @@ pipeline {
                 bat '''
                 echo Starting Flask App...
                 taskkill /F /IM python.exe || exit 0
-                start /B python app.py
+                start /B "flask-app" "C:\\Users\\bjvar\\AppData\\Local\\Programs\\Python\\Python314\\python.exe" app.py
                 '''
             }
         }
