@@ -5,13 +5,9 @@ from app import app, mongo
 @pytest.fixture
 def client():
     app.config["TESTING"] = True
-    app.config["MONGO_URI"] = os.getenv("MONGO_URI")
-     os.environ["MONGO_URI"] = "mongodb://localhost:27017/testdb"
+    os.environ["MONGO_URI"] = "mongodb://localhost:27017/testdb"
 
-    app = create_app()
-    app.config["TESTING"] = True
-
-    client = app.test_client()
+    app.config["MONGO_URI"] = os.environ["MONGO_URI"]
 
     with app.app_context():
         mongo.db.students.delete_many({})
