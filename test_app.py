@@ -6,6 +6,10 @@ from app import app, mongo
 def client():
     app.config["TESTING"] = True
     app.config["MONGO_URI"] = os.getenv("MONGO_URI")
+     os.environ["MONGO_URI"] = "mongodb://localhost:27017/testdb"
+
+    app = create_app()
+    app.config["TESTING"] = True
 
     client = app.test_client()
 
