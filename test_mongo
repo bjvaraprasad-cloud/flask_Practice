@@ -1,0 +1,9 @@
+from pymongo import MongoClient
+
+client = MongoClient("mongodb+srv://bjvaraprasad_db_user:VOBWm6B5rKyxf2eG@vara.axctbzu.mongodb.net/?appName=vara")
+
+try:
+    client.admin.command('ping')
+    print("MongoDB Connected Successfully!")
+except Exception as e:
+    print("Connection Failed:", e)
