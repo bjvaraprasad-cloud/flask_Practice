@@ -28,9 +28,13 @@ A simple **Flask** web application to manage student records with **MongoDB** as
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
-cd <repo-folder>
-```
+git clone https://github.com/bjvaraprasad-cloud/flask_Practice.git
+Cloning into 'flask_Practice'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
 
 ### 2. Create and activate a virtual environment
 
@@ -63,8 +67,8 @@ bson
 Create a `.env` file in the project root:
 
 ```
-MONGO_URI=<your-mongodb-connection-string>
-SECRET_KEY=<your-secret-key>
+MONGO_URI=mongodb+srv://bjvaraprasad_db_user:*******@vara.axctbzu.mongodb.net/?appName=vara
+SECRET_KEY=******
 ```
 
 ### 5. Run the application
