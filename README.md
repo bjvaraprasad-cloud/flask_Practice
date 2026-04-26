@@ -35,6 +35,11 @@ remote: Counting objects: 100% (3/3), done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 Receiving objects: 100% (3/3), done.
 
+<img width="940" height="173" alt="image" src="https://github.com/user-attachments/assets/4223c701-3c87-4d52-82db-7a558982a0c1" />
+
+<img width="940" height="718" alt="image" src="https://github.com/user-attachments/assets/411d3550-4b65-4728-b14c-a5a66e6c3638" />
+
+
 
 ### 2. Create and activate a virtual environment
 
@@ -61,6 +66,10 @@ Flask-PyMongo
 python-dotenv
 bson
 ```
+<img width="864" height="364" alt="image" src="https://github.com/user-attachments/assets/aa00051a-19cc-444c-953f-eab1be2b948b" />
+<img width="940" height="410" alt="image" src="https://github.com/user-attachments/assets/e32626cf-ca99-453b-aada-8010d1c2f571" />
+
+<img width="940" height="716" alt="image" src="https://github.com/user-attachments/assets/afb050ba-ccc4-4265-9522-1e6789a9c549" />
 
 ### 4. Configure environment variables
 
@@ -116,6 +125,10 @@ Form pre-filled with student details.
 - <img width="1905" height="897" alt="image" src="https://github.com/user-attachments/assets/04febf01-879f-431f-ab07-abcfb993acf1" />
 
 
+<img width="611" height="263" alt="image" src="https://github.com/user-attachments/assets/5b95a07e-32bb-4003-b65d-3cd129ca2768" />
+
+
+<img width="634" height="282" alt="image" src="https://github.com/user-attachments/assets/ad3c465f-48dd-49f1-be56-bfd7f3fb8414" />
 
 ---
 
